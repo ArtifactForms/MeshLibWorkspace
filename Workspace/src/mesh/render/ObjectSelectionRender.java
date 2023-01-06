@@ -67,7 +67,6 @@ public class ObjectSelectionRender {
 	private void drawBuffer(SceneObject sceneObject) {
 		PGraphics3D context = g3d;
 		Mesh3D mesh = sceneObject.getMesh();
-//		this.colorToObjectName.clear();
 
 		int c = -1;
 		if (nameToColor.containsKey(sceneObject.getName())) {
