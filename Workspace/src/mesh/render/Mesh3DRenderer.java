@@ -14,16 +14,11 @@ import processing.opengl.PGraphics3D;
 
 public class Mesh3DRenderer {
 
-	PApplet context;
-//	PGraphics3D context;
-	PImage image;
+	private PApplet context;
+	private PImage image;
 
 	public Mesh3DRenderer(PApplet context) {
-//	public Mesh3DRenderer(PGraphics3D g3d) {
-		super();
 		this.context = context;
-//		image = this.context.loadImage("UVMS1_colorgrid.png");
-//		this.context = g3d;
 	}
 
 	public void drawVertices(Mesh3D mesh) {
@@ -32,9 +27,6 @@ public class Mesh3DRenderer {
 		for (int i = 0; i < mesh.vertices.size(); i++) {
 			Vector3f v = mesh.vertices.get(i);
 			context.vertex(v.getX(), v.getY(), v.getZ());
-//			for (int j = 0; j < i; j++) {
-//				context.vertex(v.x, v.y + j * 0.05f, v.z);
-//			}
 		}
 		context.endShape();
 		context.popMatrix();
@@ -158,16 +150,8 @@ public class Mesh3DRenderer {
 				context.beginShape();
 			}
 
-//			context.textureMode(PApplet.NORMAL);
-//			context.textureWrap(PApplet.REPEAT);
-//			float a = 1 /8f;
-//			float[] u1 = new float[] {0, a, a, 0};
-//			float[] v1 = new float[] {0, 0, a, a};
-
 			for (int i = 0; i < f.indices.length; i++) {
-//				context.texture(image);
 				v = mesh.vertices.get(f.indices[i]);
-//				context.vertex(v.x, v.y, v.z, u1[i], v1[i]);
 				context.vertex(v.getX(), v.getY(), v.getZ());
 			}
 
