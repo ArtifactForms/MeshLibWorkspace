@@ -240,15 +240,6 @@ public class Mesh3DRenderer {
 		}
 	}
 
-	public void drawPath(Path path, float spacing) {
-		List<Vector3f> vertices = path.calculateEvenlySpacedPoints(spacing, 1);
-		for (int i = 0; i < vertices.size() - 1; i++) {
-			Vector3f from = vertices.get(i);
-			Vector3f to = vertices.get(i + 1);
-			context.line(from.getX(), from.getY(), from.getZ(), to.getX(), to.getY(), to.getZ());
-		}
-	}
-
 	public void drawGizmo(float length) {
 		context.pushStyle();
 		context.noFill();

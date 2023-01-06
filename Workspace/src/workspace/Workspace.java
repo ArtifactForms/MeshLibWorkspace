@@ -237,17 +237,6 @@ public class Workspace extends Editor implements ModelListener {
 		draw(mesh, new Color(220, 220, 220));
 	}
 
-	public void drawPath(Path path, float spacing) {
-		List<Vector3f> vertices = path.calculateEvenlySpacedPoints(spacing, 1);
-		p.stroke(0);
-		p.strokeWeight(1 / getScale());
-		for (int i = 0; i < vertices.size() - 1; i++) {
-			Vector3f from = vertices.get(i);
-			Vector3f to = vertices.get(i + 1);
-			p.line(from.getX(), from.getY(), from.getZ(), to.getX(), to.getY(), to.getZ());
-		}
-	}
-
 	public void post() {
 //		p.saveFrame("output/workspace/workspace_demo####.png");
 	}
