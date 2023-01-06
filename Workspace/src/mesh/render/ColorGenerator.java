@@ -4,7 +4,7 @@ import math.Color;
 
 public class ColorGenerator {
 
-	int i = 0;
+	private int i = 0;
 
 	public Color next() {
 		i++;
