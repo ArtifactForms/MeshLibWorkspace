@@ -1,9 +1,5 @@
 package workspace;
 
-import java.util.List;
-
-import curves.Path;
-import math.Vector3f;
 import mesh.Mesh3D;
 import mesh.render.Mesh3DRenderer;
 import mesh.render.ObjectSelectionRender;

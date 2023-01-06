@@ -3,7 +3,6 @@ package mesh.render;
 import java.util.Collection;
 import java.util.List;
 
-import curves.Path;
 import math.Vector3f;
 import mesh.Face3D;
 import mesh.Mesh3D;
