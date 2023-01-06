@@ -9,13 +9,11 @@ import mesh.Mesh3D;
 import mesh.selection.FaceSelection;
 import mesh.util.VertexNormals;
 import processing.core.PApplet;
-import processing.core.PImage;
 import processing.opengl.PGraphics3D;
 
 public class Mesh3DRenderer {
 
 	private PApplet context;
-	private PImage image;
 
 	public Mesh3DRenderer(PApplet context) {
 		this.context = context;
