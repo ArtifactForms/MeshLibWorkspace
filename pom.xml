@@ -27,11 +27,6 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>MeshLibCoreClean2022</groupId>
-            <artifactId>MeshLibCoreClean2022</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.processing</groupId>
             <artifactId>core</artifactId>
             <version>3.3.7</version>
