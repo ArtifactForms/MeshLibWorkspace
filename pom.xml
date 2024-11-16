@@ -25,8 +25,8 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>MeshLibCore</groupId>
-            <artifactId>MeshLibCore</artifactId>
+            <groupId>MeshLibCoreClean2022</groupId>
+            <artifactId>MeshLibCoreClean2022</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
