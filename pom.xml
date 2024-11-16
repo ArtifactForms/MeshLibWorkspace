@@ -2,11 +2,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>Workspace</groupId>
-    <artifactId>Workspace</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>MeshLibWorkspace</groupId>
+    <artifactId>MeshLibWorkspace</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
     <build>
-        <sourceDirectory>src</sourceDirectory>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -21,14 +22,14 @@
         <repository>
             <id>github</id>
             <name>GitHub ArtifactForms Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/ArtifactForms/MeshLibCore/master</url>
+            <url>https://maven.pkg.github.com/ArtifactForms/MeshLibCore/</url>
         </repository>
     </repositories>
     <dependencies>
         <dependency>
             <groupId>MeshLibCoreClean2022</groupId>
             <artifactId>MeshLibCoreClean2022</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.processing</groupId>
