@@ -3,7 +3,9 @@ package workspace.command;
 public abstract class AbstractKeyCommand implements KeyCommand {
 
 	private char key;
+
 	private boolean enabled;
+
 	private String name;
 
 	public AbstractKeyCommand() {
